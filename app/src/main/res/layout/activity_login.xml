@@ -3,14 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@color/blue_sky">
 
     <TextView
         android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/dark_blue"
         android:text="Đăng nhập"
-        android:textSize="24sp"
+        android:textSize="40sp"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="150dp" />
@@ -21,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="220dp"
         android:hint="Username"
+        android:textColorHint="@color/white"
         android:layout_marginBottom="8dp"/>
 
     <EditText
@@ -28,6 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
+        android:textColorHint="@color/white"
         android:inputType="textPassword"
         android:layout_below="@id/editTextUsername"
         android:layout_marginBottom="8dp"/>
@@ -47,7 +51,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="380dp"
         android:text="Chưa có tài khoản? "
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:textSize="14sp"/>
 
 </RelativeLayout>
